@@ -112,7 +112,7 @@
 }
 
 .btn-3:hover:before {
-    transition: 0.8s all ease-in;
+    transition: 0.5s all ease-in;
     border-radius: 0;
     left: -50%;
     right: -50%;
@@ -120,4 +120,96 @@
     bottom: -50%;
     opacity: 1;
     z-index: -1;
+}
+
+/* BUTTON 4 */
+.btn-4 {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    font-size: 2em;
+    color: #252525;
+    background: rgb(241,241,241);
+    background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(164,180,184,1) 100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-4:hover {
+    transition: all ease 1s;
+    color: #f1f1f1;
+    background: transparent;
+    box-shadow:none;
+    cursor: pointer;
+}
+.btn-4:before,
+.btn-4:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: white;
+    transition:400ms ease all;
+}
+.btn-4:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-4:hover:before,
+.btn-4:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+    width: 300px;
+    position: relative;
+    height: 100px;
+    border-radius: 4px;
+    color: white;
+    font-size: 2em;
+    outline: none;
+    transition: ease-in 0.8s;
+    position: relative;
+    z-index: 1;
+    border: transparent;
+    transform: rotateY(0);
+    transition: ease-in 1s;
+}
+
+.btn-5 span{
+    border: none;
+    background: initial;
+}
+
+.btn-5::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(244,140,6);
+    background: linear-gradient(90deg, rgba(244,140,6,1) 0%, rgba(221,230,15,1) 100%);
+    transform: rotatey(0);
+    transition: ease 0.7s;
+}
+
+.btn-5:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-5:hover::after {
+    transform: rotatey(180deg);
+    transition: ease 0.7s;
 }
