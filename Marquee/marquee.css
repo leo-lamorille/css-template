@@ -8,11 +8,11 @@
 html {
     height: 100%;
     font-size: 18px;
-    background-color: #f3d5b5;
+    background-color: #252525;
 }
 
 .wrap {
-    border: 5px solid #d4a276;
+    border: 5px solid #42FBF2;
     overflow: hidden;
 }
 
@@ -27,13 +27,13 @@ html {
     list-style: none;
     width: 50%;
     white-space: nowrap;
-    color: #bc8a5f;
+    color: #f1f1f1;
     font-size: 5rem;
     flex-shrink: 0;
 }
 
 .name:nth-child(even) {
-    color: #603808; 
+    color: #42FBF2; 
 }
 
 
